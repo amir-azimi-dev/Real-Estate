@@ -14,7 +14,6 @@ body {
     background-color: var(--color-white);
     min-height: 100vh;
     max-width: 100%;
-    direction: rtl;
 }
 
 :root {
@@ -54,7 +53,7 @@ body {
             var(--color-secondry-light),
             var(--color-secondry-light)
         ),
-        url(/img/hero.jpeg);
+        url(../../img/hero.jpeg);
     background-size: cover;
     background-position: center;
     grid-column: full-start / col-end 6;
@@ -217,7 +216,7 @@ body {
 
 .list {
     position: absolute;
-    bottom: 10%;
+    top: 10%;
     left: 50%;
     transform: translate(-25%, -50%);
     width: 0;
@@ -283,7 +282,7 @@ body {
     grid-column: full-start / col-end 4;
 
     background-image: linear-gradient(to left, #c699637e, #b2855180),
-        url(/img/back.jpg);
+        url(../../img/back.jpg);
     background-size: cover;
 
     display: grid;
@@ -786,25 +785,25 @@ body {
 
 @font-face {
     font-family: 'koodak';
-    src: url('/fonts/KoodakBold.eot?#') format('eot'),
-        url('/fonts/KoodakBold.ttf') format('truetype'),
-        url('/fonts/KoodakBold.woff') format('woff');
+    src: url('../../fonts/KoodakBold.eot?#') format('eot'),
+        url('../../fonts/KoodakBold.ttf') format('truetype'),
+        url('../../fonts/KoodakBold.woff') format('woff');
 }
 @font-face {
     font-family: 'yekan';
-    src: url('/fonts/Yekan.eot?#') format('eot'),
-        url('/fonts/Yekan.ttf') format('truetype'),
-        url('/fonts/Yekan.woff') format('woff');
+    src: url('../../fonts/Yekan.eot?#') format('eot'),
+        url('../../fonts/Yekan.ttf') format('truetype'),
+        url('../../fonts/Yekan.woff') format('woff');
 }
 @font-face {
     font-family: 'nazanin';
-    src: url('/fonts/Nazanin.eot') format('eot'),
-        url('/fonts/Nazanin.ttf') format('truetype'),
-        url('/fonts/Nazanin.woff') format('woff');
+    src: url('../../fonts/Nazanin.eot') format('eot'),
+        url('../../fonts/Nazanin.ttf') format('truetype'),
+        url('../../fonts/Nazanin.woff') format('woff');
 }
 @font-face {
     font-family: 'gandom';
-    src: url('/fonts/Gandom.eot') format('eot'),
-        url('/fonts/Gandom.ttf') format('truetype'),
-        url('/fonts/Gandom.woff') format('woff');
+    src: url('../../fonts/Gandom.eot') format('eot'),
+        url('../../fonts/Gandom.ttf') format('truetype'),
+        url('../../fonts/Gandom.woff') format('woff');
 }
