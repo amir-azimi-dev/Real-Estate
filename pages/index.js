@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Create Next App</title>
+        <title>خانه</title>
         <meta name="author" content="Amir Azimi" />
         <meta name="description" content="A NextJS practice application." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />

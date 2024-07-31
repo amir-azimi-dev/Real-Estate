@@ -1,10 +1,12 @@
+import Link from 'next/link'
 import React from 'react'
 
-function HouseCard() {
+function HouseCard({ id, title, img, roomCount, meterage, price }) {
+
     return (
         <div className="card">
-            <img src="img/gal-2.jpeg" alt="House 6" className="card__img" />
-            <h5 className="card__title">آپارتمان خانوادگی مدرن</h5>
+            <img src={img} alt={title} className="card__img" />
+            <h5 className="card__title">{title}</h5>
             <svg className="card__like">
                 <use href="img/sprite.svg#icon-heart-full"></use>
             </svg>
@@ -19,20 +21,20 @@ function HouseCard() {
                         href="img/sprite.svg#icon-profile-male"
                     ></use>
                 </svg>
-                <p className="card__text">4 اتاق</p>
+                <p className="card__text">{roomCount} اتاق</p>
 
                 <svg className="card__icon">
                     <use href="img/sprite.svg#icon-expand"></use>
                 </svg>
-                <p className="card__text">400 متر مربع</p>
+                <p className="card__text">{meterage.toLocaleString("en")} متر مربع</p>
 
                 <svg className="card__icon">
                     <use href="img/sprite.svg#icon-key"></use>
                 </svg>
-                <p className="card__text">560 میلیون تومان</p>
+                <p className="card__text">{price.toLocaleString("en")} میلیون تومان</p>
             </div>
 
-            <a href="singleHouse.html" className="btn btn-brown btn-card">مشاهده ملک</a>
+            <Link href={`/house/${id}`} className="btn btn-brown btn-card">مشاهده ملک</Link>
         </div>
     )
 }
